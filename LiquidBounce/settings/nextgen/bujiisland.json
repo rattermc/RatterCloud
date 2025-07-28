@@ -4907,7 +4907,7 @@
                     "value": [
                         {
                             "name": "Enabled",
-                            "value": false
+                            "value": true
                         },
                         {
                             "name": "Hidden",
@@ -4923,8 +4923,8 @@
                         {
                             "name": "Delay",
                             "value": {
-                                "from": 1000,
-                                "to": 1000
+                                "from": 200,
+                                "to": 250
                             }
                         },
                         {
@@ -4957,7 +4957,7 @@
                         },
                         {
                             "name": "TargetMode",
-                            "value": "Range"
+                            "value": "Attack"
                         },
                         {
                             "name": "LastAttackTimeToWork",
@@ -11194,7 +11194,7 @@
                     "value": [
                         {
                             "name": "Enabled",
-                            "value": false
+                            "value": true
                         },
                         {
                             "name": "Hidden",
@@ -13497,608 +13497,6 @@
                     ]
                 },
                 {
-                    "name": "HUD",
-                    "value": [
-                        {
-                            "name": "Enabled",
-                            "value": true
-                        },
-                        {
-                            "name": "Hidden",
-                            "value": true
-                        },
-                        {
-                            "name": "Blur",
-                            "value": true
-                        },
-                        {
-                            "name": "SpaceSeperatedNames",
-                            "value": true
-                        },
-                        {
-                            "name": "CenteredCrosshair",
-                            "value": true
-                        },
-                        {
-                            "name": "In-built",
-                            "value": [
-                                {
-                                    "name": "Watermark",
-                                    "value": [
-                                        {
-                                            "name": "Enabled",
-                                            "value": true
-                                        },
-                                        {
-                                            "name": "Alignment",
-                                            "value": [
-                                                {
-                                                    "name": "Horizontal",
-                                                    "value": "Left"
-                                                },
-                                                {
-                                                    "name": "HorizontalOffset",
-                                                    "value": 15
-                                                },
-                                                {
-                                                    "name": "Vertical",
-                                                    "value": "Top"
-                                                },
-                                                {
-                                                    "name": "VerticalOffset",
-                                                    "value": 15
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "name": "TabGui",
-                                    "value": [
-                                        {
-                                            "name": "Enabled",
-                                            "value": true
-                                        },
-                                        {
-                                            "name": "Alignment",
-                                            "value": [
-                                                {
-                                                    "name": "Horizontal",
-                                                    "value": "Left"
-                                                },
-                                                {
-                                                    "name": "HorizontalOffset",
-                                                    "value": 15
-                                                },
-                                                {
-                                                    "name": "Vertical",
-                                                    "value": "Top"
-                                                },
-                                                {
-                                                    "name": "VerticalOffset",
-                                                    "value": 80
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "name": "ArrayList",
-                                    "value": [
-                                        {
-                                            "name": "Enabled",
-                                            "value": true
-                                        },
-                                        {
-                                            "name": "Alignment",
-                                            "value": [
-                                                {
-                                                    "name": "Horizontal",
-                                                    "value": "Right"
-                                                },
-                                                {
-                                                    "name": "HorizontalOffset",
-                                                    "value": 0
-                                                },
-                                                {
-                                                    "name": "Vertical",
-                                                    "value": "Top"
-                                                },
-                                                {
-                                                    "name": "VerticalOffset",
-                                                    "value": 0
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "name": "Notifications",
-                                    "value": [
-                                        {
-                                            "name": "Enabled",
-                                            "value": true
-                                        },
-                                        {
-                                            "name": "Alignment",
-                                            "value": [
-                                                {
-                                                    "name": "Horizontal",
-                                                    "value": "Right"
-                                                },
-                                                {
-                                                    "name": "HorizontalOffset",
-                                                    "value": 15
-                                                },
-                                                {
-                                                    "name": "Vertical",
-                                                    "value": "Bottom"
-                                                },
-                                                {
-                                                    "name": "VerticalOffset",
-                                                    "value": 5
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "name": "Hotbar",
-                                    "value": [
-                                        {
-                                            "name": "Enabled",
-                                            "value": false
-                                        },
-                                        {
-                                            "name": "Alignment",
-                                            "value": [
-                                                {
-                                                    "name": "Horizontal",
-                                                    "value": "CenterTranslated"
-                                                },
-                                                {
-                                                    "name": "HorizontalOffset",
-                                                    "value": 0
-                                                },
-                                                {
-                                                    "name": "Vertical",
-                                                    "value": "Bottom"
-                                                },
-                                                {
-                                                    "name": "VerticalOffset",
-                                                    "value": 15
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "name": "Scoreboard",
-                                    "value": [
-                                        {
-                                            "name": "Enabled",
-                                            "value": false
-                                        },
-                                        {
-                                            "name": "Alignment",
-                                            "value": [
-                                                {
-                                                    "name": "Horizontal",
-                                                    "value": "Left"
-                                                },
-                                                {
-                                                    "name": "HorizontalOffset",
-                                                    "value": 15
-                                                },
-                                                {
-                                                    "name": "Vertical",
-                                                    "value": "CenterTranslated"
-                                                },
-                                                {
-                                                    "name": "VerticalOffset",
-                                                    "value": 0
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "name": "ArmorItems",
-                                    "value": [
-                                        {
-                                            "name": "Enabled",
-                                            "value": true
-                                        },
-                                        {
-                                            "name": "Alignment",
-                                            "value": [
-                                                {
-                                                    "name": "Horizontal",
-                                                    "value": "CenterTranslated"
-                                                },
-                                                {
-                                                    "name": "HorizontalOffset",
-                                                    "value": 225
-                                                },
-                                                {
-                                                    "name": "Vertical",
-                                                    "value": "Bottom"
-                                                },
-                                                {
-                                                    "name": "VerticalOffset",
-                                                    "value": 15
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "name": "Inventory",
-                                    "value": [
-                                        {
-                                            "name": "Enabled",
-                                            "value": true
-                                        },
-                                        {
-                                            "name": "Alignment",
-                                            "value": [
-                                                {
-                                                    "name": "Horizontal",
-                                                    "value": "Right"
-                                                },
-                                                {
-                                                    "name": "HorizontalOffset",
-                                                    "value": 15
-                                                },
-                                                {
-                                                    "name": "Vertical",
-                                                    "value": "Bottom"
-                                                },
-                                                {
-                                                    "name": "VerticalOffset",
-                                                    "value": 15
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "name": "CraftingInventory",
-                                    "value": [
-                                        {
-                                            "name": "Enabled",
-                                            "value": true
-                                        },
-                                        {
-                                            "name": "Alignment",
-                                            "value": [
-                                                {
-                                                    "name": "Horizontal",
-                                                    "value": "Right"
-                                                },
-                                                {
-                                                    "name": "HorizontalOffset",
-                                                    "value": 15
-                                                },
-                                                {
-                                                    "name": "Vertical",
-                                                    "value": "Bottom"
-                                                },
-                                                {
-                                                    "name": "VerticalOffset",
-                                                    "value": 150
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "name": "Minimap",
-                                    "value": [
-                                        {
-                                            "name": "Enabled",
-                                            "value": true
-                                        },
-                                        {
-                                            "name": "Alignment",
-                                            "value": [
-                                                {
-                                                    "name": "Horizontal",
-                                                    "value": "Left"
-                                                },
-                                                {
-                                                    "name": "HorizontalOffset",
-                                                    "value": 7
-                                                },
-                                                {
-                                                    "name": "Vertical",
-                                                    "value": "Top"
-                                                },
-                                                {
-                                                    "name": "VerticalOffset",
-                                                    "value": 170
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "name": "Size",
-                                            "value": 82
-                                        },
-                                        {
-                                            "name": "ViewDistance",
-                                            "value": 3
-                                        }
-                                    ]
-                                },
-                                {
-                                    "name": "TargetHud",
-                                    "value": [
-                                        {
-                                            "name": "Enabled",
-                                            "value": true
-                                        },
-                                        {
-                                            "name": "Alignment",
-                                            "value": [
-                                                {
-                                                    "name": "Horizontal",
-                                                    "value": "Center"
-                                                },
-                                                {
-                                                    "name": "HorizontalOffset",
-                                                    "value": 20
-                                                },
-                                                {
-                                                    "name": "Vertical",
-                                                    "value": "CenterTranslated"
-                                                },
-                                                {
-                                                    "name": "VerticalOffset",
-                                                    "value": 0
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "name": "BlockCounter",
-                                    "value": [
-                                        {
-                                            "name": "Enabled",
-                                            "value": true
-                                        },
-                                        {
-                                            "name": "Alignment",
-                                            "value": [
-                                                {
-                                                    "name": "Horizontal",
-                                                    "value": "Center"
-                                                },
-                                                {
-                                                    "name": "HorizontalOffset",
-                                                    "value": -20
-                                                },
-                                                {
-                                                    "name": "Vertical",
-                                                    "value": "CenterTranslated"
-                                                },
-                                                {
-                                                    "name": "VerticalOffset",
-                                                    "value": 0
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "name": "Effects",
-                                    "value": [
-                                        {
-                                            "name": "Enabled",
-                                            "value": true
-                                        },
-                                        {
-                                            "name": "Alignment",
-                                            "value": [
-                                                {
-                                                    "name": "Horizontal",
-                                                    "value": "Right"
-                                                },
-                                                {
-                                                    "name": "HorizontalOffset",
-                                                    "value": 15
-                                                },
-                                                {
-                                                    "name": "Vertical",
-                                                    "value": "Bottom"
-                                                },
-                                                {
-                                                    "name": "VerticalOffset",
-                                                    "value": 15
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "name": "Keystrokes",
-                                    "value": [
-                                        {
-                                            "name": "Enabled",
-                                            "value": true
-                                        },
-                                        {
-                                            "name": "Alignment",
-                                            "value": [
-                                                {
-                                                    "name": "Horizontal",
-                                                    "value": "Left"
-                                                },
-                                                {
-                                                    "name": "HorizontalOffset",
-                                                    "value": 15
-                                                },
-                                                {
-                                                    "name": "Vertical",
-                                                    "value": "Bottom"
-                                                },
-                                                {
-                                                    "name": "VerticalOffset",
-                                                    "value": 55
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "name": "Taco",
-                                    "value": [
-                                        {
-                                            "name": "Enabled",
-                                            "value": false
-                                        },
-                                        {
-                                            "name": "Alignment",
-                                            "value": [
-                                                {
-                                                    "name": "Horizontal",
-                                                    "value": "Left"
-                                                },
-                                                {
-                                                    "name": "HorizontalOffset",
-                                                    "value": 0
-                                                },
-                                                {
-                                                    "name": "Vertical",
-                                                    "value": "Bottom"
-                                                },
-                                                {
-                                                    "name": "VerticalOffset",
-                                                    "value": 65
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "name": "Custom",
-                            "value": [
-                                {
-                                    "name": "Text",
-                                    "value": [
-                                        {
-                                            "name": "Enabled",
-                                            "value": false
-                                        },
-                                        {
-                                            "name": "Alignment",
-                                            "value": [
-                                                {
-                                                    "name": "Horizontal",
-                                                    "value": "Left"
-                                                },
-                                                {
-                                                    "name": "HorizontalOffset",
-                                                    "value": 4
-                                                },
-                                                {
-                                                    "name": "Vertical",
-                                                    "value": "Bottom"
-                                                },
-                                                {
-                                                    "name": "VerticalOffset",
-                                                    "value": 22
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "name": "Text",
-                                            "value": "Ping: {ping}, XYZ {position.x}, {position.y}, {position.z} | Nether XZ: {netherPosition.x}, {netherPosition.z}"
-                                        },
-                                        {
-                                            "name": "Color",
-                                            "value": -1
-                                        },
-                                        {
-                                            "name": "Font",
-                                            "value": "Inter"
-                                        },
-                                        {
-                                            "name": "Size",
-                                            "value": 14
-                                        },
-                                        {
-                                            "name": "Decorations",
-                                            "value": [
-                                                {
-                                                    "name": "Bold",
-                                                    "value": false
-                                                },
-                                                {
-                                                    "name": "Italic",
-                                                    "value": false
-                                                },
-                                                {
-                                                    "name": "Underline",
-                                                    "value": false
-                                                },
-                                                {
-                                                    "name": "Strikethrough",
-                                                    "value": false
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "name": "Shadow",
-                                            "value": [
-                                                {
-                                                    "name": "Enabled",
-                                                    "value": false
-                                                },
-                                                {
-                                                    "name": "OffsetX",
-                                                    "value": 0
-                                                },
-                                                {
-                                                    "name": "OffsetY",
-                                                    "value": 0
-                                                },
-                                                {
-                                                    "name": "BlurRadius",
-                                                    "value": 0
-                                                },
-                                                {
-                                                    "name": "Color",
-                                                    "value": -16777216
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "name": "Glow",
-                                            "value": [
-                                                {
-                                                    "name": "Enabled",
-                                                    "value": false
-                                                },
-                                                {
-                                                    "name": "Radius",
-                                                    "value": 0
-                                                },
-                                                {
-                                                    "name": "Color",
-                                                    "value": -1
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
                     "name": "HandDerp",
                     "value": [
                         {
@@ -15406,7 +14804,7 @@
                             "value": [
                                 {
                                     "name": "AngleSmooth",
-                                    "active": "Linear",
+                                    "active": "Sigmoid",
                                     "value": [],
                                     "choices": {
                                         "Linear": {
@@ -15434,24 +14832,24 @@
                                                 {
                                                     "name": "HorizontalTurnSpeed",
                                                     "value": {
-                                                        "from": 109.8,
-                                                        "to": 150.3
+                                                        "from": 140,
+                                                        "to": 170
                                                     }
                                                 },
                                                 {
                                                     "name": "VerticalTurnSpeed",
                                                     "value": {
-                                                        "from": 111.6,
-                                                        "to": 137.7
+                                                        "from": 140,
+                                                        "to": 170
                                                     }
                                                 },
                                                 {
                                                     "name": "Steepness",
-                                                    "value": 0
+                                                    "value": 10
                                                 },
                                                 {
                                                     "name": "Midpoint",
-                                                    "value": 0
+                                                    "value": 0.3
                                                 }
                                             ]
                                         },
@@ -17485,7 +16883,7 @@
                     "value": [
                         {
                             "name": "Enabled",
-                            "value": false
+                            "value": true
                         },
                         {
                             "name": "Hidden",
@@ -17536,7 +16934,7 @@
                     "value": [
                         {
                             "name": "Enabled",
-                            "value": false
+                            "value": true
                         },
                         {
                             "name": "Hidden",
@@ -17545,7 +16943,7 @@
                         {
                             "name": "PushBy",
                             "value": [
-                                "Entities"
+                                "Entities","Liquids"
                             ]
                         }
                     ]
@@ -17555,7 +16953,7 @@
                     "value": [
                         {
                             "name": "Enabled",
-                            "value": true
+                            "value": false
                         },
                         {
                             "name": "Hidden",
@@ -18145,7 +17543,7 @@
                     "value": [
                         {
                             "name": "Enabled",
-                            "value": false
+                            "value": true
                         },
                         {
                             "name": "Hidden",
@@ -18157,7 +17555,7 @@
                         },
                         {
                             "name": "Mode",
-                            "active": "Grim2365",
+                            "active": "Air",
                             "value": [],
                             "choices": {
                                 "Air": {
@@ -19284,7 +18682,7 @@
                     "value": [
                         {
                             "name": "Enabled",
-                            "value": false
+                            "value": true
                         },
                         {
                             "name": "Hidden",
@@ -19327,7 +18725,7 @@
                             "value": [
                                 {
                                     "name": "AngleSmooth",
-                                    "active": "Linear",
+                                    "active": "Sigmoid",
                                     "value": [],
                                     "choices": {
                                         "Linear": {
@@ -19990,7 +19388,7 @@
                                             "value": [
                                                 {
                                                     "name": "Enabled",
-                                                    "value": true
+                                                    "value": false
                                                 }
                                             ]
                                         },
@@ -20008,7 +19406,7 @@
                                             "value": [
                                                 {
                                                     "name": "Enabled",
-                                                    "value": true
+                                                    "value": false
                                                 }
                                             ]
                                         }
@@ -20049,8 +19447,8 @@
                                         {
                                             "name": "EdgeDistance",
                                             "value": {
-                                                "from": 0.45,
-                                                "to": 0.5
+                                                "from": 0.05,
+                                                "to": 0.15
                                             }
                                         }
                                     ]
@@ -20173,7 +19571,7 @@
                             "value": [
                                 {
                                     "name": "AngleSmooth",
-                                    "active": "Linear",
+                                    "active": "Sigmoid",
                                     "value": [],
                                     "choices": {
                                         "Linear": {
@@ -20182,15 +19580,15 @@
                                                 {
                                                     "name": "HorizontalTurnSpeed",
                                                     "value": {
-                                                        "from": 40.0,
-                                                        "to": 60.0
+                                                        "from": 140.0,
+                                                        "to": 170.0
                                                     }
                                                 },
                                                 {
                                                     "name": "VerticalTurnSpeed",
                                                     "value": {
-                                                        "from": 40.0,
-                                                        "to": 60.0
+                                                        "from": 140.0,
+                                                        "to": 170.0
                                                     }
                                                 }
                                             ]
@@ -20201,15 +19599,15 @@
                                                 {
                                                     "name": "HorizontalTurnSpeed",
                                                     "value": {
-                                                        "from": 180.0,
-                                                        "to": 180.0
+                                                        "from": 140.0,
+                                                        "to": 170.0
                                                     }
                                                 },
                                                 {
                                                     "name": "VerticalTurnSpeed",
                                                     "value": {
-                                                        "from": 180.0,
-                                                        "to": 180.0
+                                                        "from": 140.0,
+                                                        "to": 170.0
                                                     }
                                                 },
                                                 {
@@ -20485,8 +19883,12 @@
                             ]
                         },
                         {
+                            "name": "AutoSpeed",
+                            "value": true
+                        },
+                        {
                             "name": "Ledge",
-                            "value": false
+                            "value": true
                         }
                     ]
                 },
@@ -22076,7 +21478,7 @@
                         },
                         {
                             "name": "Mode",
-                            "active": "SprintTap",
+                            "active": "WTap",
                             "value": [],
                             "choices": {
                                 "Packet": {
@@ -22119,11 +21521,11 @@
                         },
                         {
                             "name": "HurtTime",
-                            "value": 0
+                            "value": 10
                         },
                         {
                             "name": "Chance",
-                            "value": 25
+                            "value": 100
                         },
                         {
                             "name": "Conditions",
@@ -23963,19 +23365,19 @@
                                     "value": [
                                         {
                                             "name": "Chance",
-                                            "value": 100
+                                            "value": 50
                                         },
                                         {
                                             "name": "JumpByReceivedHits",
                                             "value": [
                                                 {
                                                     "name": "Enabled",
-                                                    "value": false
+                                                    "value": true
                                                 },
                                                 {
                                                     "name": "HitsUntilJump",
                                                     "value": {
-                                                        "from": 2,
+                                                        "from": 1,
                                                         "to": 2
                                                     }
                                                 }
@@ -24402,20 +23804,756 @@
                             "value": 2
                         }
                     ]
-                }
-            ]
+                },
+                {
+                    "name": "ItemScroller",
+                    "value": [
+                        {
+                            "name": "Enabled",
+                            "value": true
+                        },
+                        {
+                            "name": "Hidden",
+                            "value": false
+                        },
+                        {
+                            "name": "ClickMode",
+                            "value": "QuickMove"
+                        },
+                        {
+                            "name": "Delay",
+                            "value": {
+                                "from": 2,
+                                "to": 3
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "EasyPearl",
+                    "value": [
+                        {
+                            "name": "Enabled",
+                            "value": true
+                        },
+                        {
+                            "name": "Hidden",
+                            "value": false
+                        },
+                        {
+                            "name": "AimOffThreshold",
+                            "value": 2
+                        },
+                        {
+                            "name": "ReachableCheck",
+                            "value": true
+                        },
+                        {
+                            "name": "Rotations",
+                            "value": [
+                                {
+                                    "name": "AngleSmooth",
+                                    "active": "Sigmoid",
+                                    "value": [],
+                                    "choices": {
+                                        "Linear": {
+                                            "name": "Linear",
+                                            "value": [
+                                                {
+                                                    "name": "HorizontalTurnSpeed",
+                                                    "value": {
+                                                        "from": 180,
+                                                        "to": 180
+                                                    }
+                                                },
+                                                {
+                                                    "name": "VerticalTurnSpeed",
+                                                    "value": {
+                                                        "from": 180,
+                                                        "to": 180
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "Sigmoid": {
+                                            "name": "Sigmoid",
+                                            "value": [
+                                                {
+                                                    "name": "HorizontalTurnSpeed",
+                                                    "value": {
+                                                        "from": 180,
+                                                        "to": 180
+                                                    }
+                                                },
+                                                {
+                                                    "name": "VerticalTurnSpeed",
+                                                    "value": {
+                                                        "from": 180,
+                                                        "to": 180
+                                                    }
+                                                },
+                                                {
+                                                    "name": "Steepness",
+                                                    "value": 10
+                                                },
+                                                {
+                                                    "name": "Midpoint",
+                                                    "value": 0.3
+                                                }
+                                            ]
+                                        },
+                                        "Acceleration": {
+                                            "name": "Acceleration",
+                                            "value": [
+                                                {
+                                                    "name": "YawAcceleration",
+                                                    "value": {
+                                                        "from": 20,
+                                                        "to": 25
+                                                    }
+                                                },
+                                                {
+                                                    "name": "PitchAccelelation",
+                                                    "value": {
+                                                        "from": 20,
+                                                        "to": 25
+                                                    }
+                                                },
+                                                {
+                                                    "name": "DynamicAccel",
+                                                    "value": [
+                                                        {
+                                                            "name": "Enabled",
+                                                            "value": false
+                                                        },
+                                                        {
+                                                            "name": "CoefDistance",
+                                                            "value": -1.393
+                                                        },
+                                                        {
+                                                            "name": "YawCrosshairAccel",
+                                                            "value": {
+                                                                "from": 17,
+                                                                "to": 20
+                                                            }
+                                                        },
+                                                        {
+                                                            "name": "PitchCrosshairAccel",
+                                                            "value": {
+                                                                "from": 17,
+                                                                "to": 20
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "AccelerationError",
+                                                    "value": [
+                                                        {
+                                                            "name": "Enabled",
+                                                            "value": true
+                                                        },
+                                                        {
+                                                            "name": "YawAccelError",
+                                                            "value": 0.1
+                                                        },
+                                                        {
+                                                            "name": "PitchAccelError",
+                                                            "value": 0.1
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "ConstantError",
+                                                    "value": [
+                                                        {
+                                                            "name": "Enabled",
+                                                            "value": true
+                                                        },
+                                                        {
+                                                            "name": "YawConstantError",
+                                                            "value": 0.1
+                                                        },
+                                                        {
+                                                            "name": "PitchConstantError",
+                                                            "value": 0.1
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "SigmoidDeceleration",
+                                                    "value": [
+                                                        {
+                                                            "name": "Enabled",
+                                                            "value": false
+                                                        },
+                                                        {
+                                                            "name": "Steepness",
+                                                            "value": 10
+                                                        },
+                                                        {
+                                                            "name": "Midpoint",
+                                                            "value": 0.3
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "valueType": "CHOICE"
+                                },
+                                {
+                                    "name": "MovementCorrection",
+                                    "value": "Silent"
+                                },
+                                {
+                                    "name": "ResetThreshold",
+                                    "value": 2
+                                },
+                                {
+                                    "name": "TicksUntilReset",
+                                    "value": 5
+                                }
+                            ]
+                        }
+                    ]
+                },
+            {
+                "name": "PotionSpoof",
+                "value": [
+                    {
+                        "name": "Enabled",
+                        "value": false
+                    },
+                    {
+                        "name": "Locked",
+                        "value": true
+                    },
+                    {
+                        "name": "Hidden",
+                        "value": false
+                    },
+                    {
+                        "name": "Speed",
+                        "value": [
+                            {
+                                "name": "Enabled",
+                                "value": false
+                            },
+                            {
+                                "name": "Level",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Slowness",
+                        "value": [
+                            {
+                                "name": "Enabled",
+                                "value": false
+                            },
+                            {
+                                "name": "Level",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Haste",
+                        "value": [
+                            {
+                                "name": "Enabled",
+                                "value": false
+                            },
+                            {
+                                "name": "Level",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Mining Fatigue",
+                        "value": [
+                            {
+                                "name": "Enabled",
+                                "value": false
+                            },
+                            {
+                                "name": "Level",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Strength",
+                        "value": [
+                            {
+                                "name": "Enabled",
+                                "value": false
+                            },
+                            {
+                                "name": "Level",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Instant Health",
+                        "value": [
+                            {
+                                "name": "Enabled",
+                                "value": false
+                            },
+                            {
+                                "name": "Level",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Instant Damage",
+                        "value": [
+                            {
+                                "name": "Enabled",
+                                "value": false
+                            },
+                            {
+                                "name": "Level",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Jump Boost",
+                        "value": [
+                            {
+                                "name": "Enabled",
+                                "value": false
+                            },
+                            {
+                                "name": "Level",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Nausea",
+                        "value": [
+                            {
+                                "name": "Enabled",
+                                "value": false
+                            },
+                            {
+                                "name": "Level",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Regeneration",
+                        "value": [
+                            {
+                                "name": "Enabled",
+                                "value": false
+                            },
+                            {
+                                "name": "Level",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Resistance",
+                        "value": [
+                            {
+                                "name": "Enabled",
+                                "value": false
+                            },
+                            {
+                                "name": "Level",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fire Resistance",
+                        "value": [
+                            {
+                                "name": "Enabled",
+                                "value": false
+                            },
+                            {
+                                "name": "Level",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Water Breathing",
+                        "value": [
+                            {
+                                "name": "Enabled",
+                                "value": false
+                            },
+                            {
+                                "name": "Level",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Invisibility",
+                        "value": [
+                            {
+                                "name": "Enabled",
+                                "value": false
+                            },
+                            {
+                                "name": "Level",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Blindness",
+                        "value": [
+                            {
+                                "name": "Enabled",
+                                "value": false
+                            },
+                            {
+                                "name": "Level",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Night Vision",
+                        "value": [
+                            {
+                                "name": "Enabled",
+                                "value": false
+                            },
+                            {
+                                "name": "Level",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Hunger",
+                        "value": [
+                            {
+                                "name": "Enabled",
+                                "value": false
+                            },
+                            {
+                                "name": "Level",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Weakness",
+                        "value": [
+                            {
+                                "name": "Enabled",
+                                "value": false
+                            },
+                            {
+                                "name": "Level",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Poison",
+                        "value": [
+                            {
+                                "name": "Enabled",
+                                "value": false
+                            },
+                            {
+                                "name": "Level",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Wither",
+                        "value": [
+                            {
+                                "name": "Enabled",
+                                "value": false
+                            },
+                            {
+                                "name": "Level",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Health Boost",
+                        "value": [
+                            {
+                                "name": "Enabled",
+                                "value": false
+                            },
+                            {
+                                "name": "Level",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Absorption",
+                        "value": [
+                            {
+                                "name": "Enabled",
+                                "value": false
+                            },
+                            {
+                                "name": "Level",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Saturation",
+                        "value": [
+                            {
+                                "name": "Enabled",
+                                "value": false
+                            },
+                            {
+                                "name": "Level",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Glowing",
+                        "value": [
+                            {
+                                "name": "Enabled",
+                                "value": false
+                            },
+                            {
+                                "name": "Level",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Levitation",
+                        "value": [
+                            {
+                                "name": "Enabled",
+                                "value": false
+                            },
+                            {
+                                "name": "Level",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Luck",
+                        "value": [
+                            {
+                                "name": "Enabled",
+                                "value": false
+                            },
+                            {
+                                "name": "Level",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Bad Luck",
+                        "value": [
+                            {
+                                "name": "Enabled",
+                                "value": false
+                            },
+                            {
+                                "name": "Level",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Slow Falling",
+                        "value": [
+                            {
+                                "name": "Enabled",
+                                "value": false
+                            },
+                            {
+                                "name": "Level",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Conduit Power",
+                        "value": [
+                            {
+                                "name": "Enabled",
+                                "value": false
+                            },
+                            {
+                                "name": "Level",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Dolphin's Grace",
+                        "value": [
+                            {
+                                "name": "Enabled",
+                                "value": false
+                            },
+                            {
+                                "name": "Level",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Bad Omen",
+                        "value": [
+                            {
+                                "name": "Enabled",
+                                "value": false
+                            },
+                            {
+                                "name": "Level",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Hero of the Village",
+                        "value": [
+                            {
+                                "name": "Enabled",
+                                "value": false
+                            },
+                            {
+                                "name": "Level",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Darkness",
+                        "value": [
+                            {
+                                "name": "Enabled",
+                                "value": false
+                            },
+                            {
+                                "name": "Level",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Trial Omen",
+                        "value": [
+                            {
+                                "name": "Enabled",
+                                "value": false
+                            },
+                            {
+                                "name": "Level",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Raid Omen",
+                        "value": [
+                            {
+                                "name": "Enabled",
+                                "value": false
+                            },
+                            {
+                                "name": "Level",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Wind Charged",
+                        "value": [
+                            {
+                                "name": "Enabled",
+                                "value": false
+                            },
+                            {
+                                "name": "Level",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Weaving",
+                        "value": [
+                            {
+                                "name": "Enabled",
+                                "value": false
+                            },
+                            {
+                                "name": "Level",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Oozing",
+                        "value": [
+                            {
+                                "name": "Enabled",
+                                "value": false
+                            },
+                            {
+                                "name": "Level",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Infested",
+                        "value": [
+                            {
+                                "name": "Enabled",
+                                "value": false
+                            },
+                            {
+                                "name": "Level",
+                                "value": 1
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     "author": " BiliBili:小龙蛇HWC",
     "date": "17/6/2025",
     "time": "20:06:07",
-    "clientVersion": "0.30.0",
-    "clientCommit": "git-4f0aa0f",
+    "clientVersion": "0.31.0",
     "serverAddress": "127.0.0.1",
     "protocolName": "1.20-1.20.1",
     "protocolVersion": 763,
     "status": "Bypassing",
     "type": "Rage",
     "chat": [
-        "如果提示CPS过高,把Kill Aura的CPS调到8或以下","§6输入.config load https://raw.githubusercontent.com/HelloWorldCoder-China/LiquidCloudDev/refs/heads/keybinds/KeyBinds/BuJiIsland.json后再运行本配置获取专属键位！§r","警告：不要在布吉岛里面探索，否则封号了别怪我，出了布吉岛再试其他快捷键，而且我不保证他们的稳定性，最好别试！！！这个配置只是基本绕过，使用时收敛收敛再收敛！！！不要奔放，因为“我偶尔奔放，但飘一会就要被封”!!!","本配置仅供参考学习，“不要实操”！！§b如果觉得特效晃眼那么请禁用AttackEffects,Particles§r","§4KillAura转头目前以优势为主,如果追求安全,把转头改成Minarai,不然就躲着点人,小心被志愿者干了!!!不要去单对单或大杀四方,不然你会引起祂们的注意......布吉岛转头探测较强,建议在敌人多时打开TargetLock防止杀戮一直转头被检测!!!搭路需要搭一会潜行一会,不然会掉!!!§r","CodeXUS脱盒免费好用!","§6§l本配置由§aHelloWorldCoder§6编写,B站: 小龙蛇HWC 求关注,§b应搭配说明合理食用！§r"
+        "§6输入.config load https://raw.githubusercontent.com/HelloWorldCoder-China/LiquidCloudDev/refs/heads/keybinds/KeyBinds/BuJiIsland.json后再运行本配置获取专属键位！§r","警告：不要在布吉岛里面探索，否则封号了别怪我，出了布吉岛再试其他快捷键，而且我不保证他们的稳定性，最好别试！！！这个配置只是基本绕过，使用时收敛收敛再收敛！！！不要奔放，因为“我偶尔奔放，但飘一会就要被封”!!!","本配置仅供参考学习，“不要实操”！！§b如果觉得特效晃眼那么请禁用AttackEffects,Particles§r","§4KillAura转头目前以优势为主,如果追求安全,把转头改成Minarai,不然就躲着点人,小心被志愿者干了!!!不要去单对单或大杀四方,不然你会引起祂们的注意......§r","§6§l本配置由§aHelloWorldCoder§6编写,B站: 小龙蛇HWC 求关注,§b应搭配说明合理食用！§r"
     ]
 }
