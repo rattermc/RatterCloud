@@ -3,10 +3,10 @@
 A storage repository for our client [RinBounce](github.com/rattermc/rinbounce69/)
 
 Website: <https://rinbounce.wtf> \
-Forum: <Coming Soon> \
+Forum: <https://forum.rinbounce.wtf> \
 Discord: <https://dsc.gg/rinbounce> \
-YouTube: <Coming Soon> \
-Twitter: <Coming Soon>
+YouTube: <https://youtube.rinbounce.wtf> \
+Twitter: <https://twitter.rinbounce.wtf>
 
 ## Contributing
 
