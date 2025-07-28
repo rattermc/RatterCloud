@@ -1,12 +1,12 @@
-# LiquidCloud
+# RatterCloud
 
-A storage repository for our client [LiquidBounce](https://liquidbounce.net/)
+A storage repository for our client [RinBounce](github.com/rattermc/rinbounce69/)
 
-Website: <https://liquidbounce.net> \
-Forum: <https://forums.ccbluex.net> \
-Discord: <https://liquidbounce.net/discord> \
-YouTube: <https://youtube.com/CCBlueX> \
-Twitter: <https://twitter.com/CCBlueX>
+Website: <https://rinbounce.wtf> \
+Forum: <Coming Soon> \
+Discord: <https://dsc.gg/rinbounce> \
+YouTube: <Coming Soon> \
+Twitter: <Coming Soon>
 
 ## Contributing
 
@@ -14,4 +14,7 @@ We appreciate contributions. So if you want to support us, feel free to make cha
 If you have experience in one or more of these fields, we would highly appreciate your support.
 
 ## Stats
-![Alt](https://repobeats.axiom.co/api/embed/0e5fb9bf32d4c19691e9a76cdf534504ceda6991.svg "Repobeats analytics image")
+![Alt](https://repobeats.axiom.co/api/embed/458db21ff4cdf0c51e4b37946ea5ba5f8a3fe0f8.svg "Repobeats analytics image")
+
+
+-# Big thanks to [LiquidCloud](https://github.com/CCBlueX/LiquidCloud)
