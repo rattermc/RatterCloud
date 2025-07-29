@@ -57,7 +57,7 @@ jobs:
           echo "$settings" > settings.json
           
           echo "Uploading settings..."
-          for file in settings/legacy/*.txt settings/nextgen/*.txt; do
+          for file in settings/*.txt; do
             if [ -f "$file" ]; then
               filename=$(basename "$file")
               setting_id=$(basename "$file" .txt)
