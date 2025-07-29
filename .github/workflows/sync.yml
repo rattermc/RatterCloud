@@ -21,7 +21,7 @@ jobs:
       - name: Process and Upload Settings
         id: process_and_upload
         env:
-          AUTHORIZATION: ${{ secrets.AUTHORIZATION }}
+          AUTHORIZATION: ${{ secrets.AUTHORIZATION }} # Use GitHub secret
           REPO_URL: ${{ github.repository }}
           COMMIT_HASH: ${{ github.sha }}
         run: |
@@ -33,9 +33,9 @@ jobs:
             local branch="$1"
             echo "Processing settings for branch: $branch"
 
-            for file in "LiquidBounce/settings/$branch"/*; do
+            for file in "settings/$branch"/*.txt; do
               if [ -f "$file" ]; then
-                setting_id=$(basename "$file" | cut -f 1 -d '.')
+                setting_id=$(basename "$file" .txt)
                 raw_url="https://raw.githubusercontent.com/${REPO_URL}/${COMMIT_HASH}/${file}"
                 checksum=$(sha256sum "$file" | cut -d ' ' -f 1)
                 timestamp=$(git log -1 --format=%ai -- "$file" | cut -d ' ' -f 1,2 | tr ' ' 'T')Z
@@ -66,13 +66,20 @@ jobs:
           echo "$settings" > settings.json
           
           echo "Uploading settings..."
-          curl --fail -X POST \
-            -H "Authorization: $AUTHORIZATION" \
-            -H "Content-Type: application/json" \
-            -d @"settings.json" \
-            "https://api.liquidbounce.net/api/v3/marketplace/sync" \
-            && echo "Settings successfully uploaded" \
-            || (echo "Failed to upload settings" && exit 1)
+          for file in settings/legacy/*.txt settings/nextgen/*.txt; do
+            if [ -f "$file" ]; then
+              filename=$(basename "$file")
+              setting_id=$(basename "$file" .txt)
+              url="https://api.rinbounce.wtf/server/settings/${filename}"
+              curl --fail -X POST \
+                -H "Authorization: Bearer $AUTHORIZATION" \
+                -H "Content-Type: application/json" \
+                -d @"settings.json" \
+                "$url" \
+                && echo "Settings for $filename successfully uploaded to $url" \
+                || (echo "Failed to upload settings for $filename" && exit 1)
+            fi
+          done
 
       - name: Upload JSON Files to Artifacts
         uses: actions/upload-artifact@v4
