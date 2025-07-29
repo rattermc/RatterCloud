@@ -30,10 +30,7 @@ jobs:
           settings="[]"
 
           process_directory() {
-            local branch="$1"
-            echo "Processing settings for branch: $branch"
-
-            for file in "settings/$branch"/*.txt; do
+            for file in "settings/*.txt; do
               if [ -f "$file" ]; then
                 setting_id=$(basename "$file" .txt)
                 raw_url="https://raw.githubusercontent.com/${REPO_URL}/${COMMIT_HASH}/${file}"
@@ -42,14 +39,12 @@ jobs:
                 contributors=$(git log -1 --format='%an <%ae>' -- "$file")
 
                 settings=$(echo "$settings" | jq --arg name "$setting_id" \
-                                                          --arg branch "$branch" \
                                                           --arg url "$raw_url" \
                                                           --arg checksum "$checksum" \
                                                           --arg timestamp "$timestamp" \
                                                           --arg contributors "$contributors" \
                                                           '. += [{
                                                             "name": $name,
-                                                            "branch": $branch,
                                                             "url": $url,
                                                             "checksum": $checksum,
                                                             "timestamp": $timestamp,
@@ -58,10 +53,6 @@ jobs:
               fi
             done
           }
-          
-          for branch in legacy nextgen; do
-            process_directory "$branch"
-          done
 
           echo "$settings" > settings.json
           
